@@ -39,8 +39,9 @@ for row in table.tbody.find_all('tr'):
                                                         'outubro': outubro, 'novembro': novembro,
                                                         'dezembro': dezembro}])])
 df.head(20)
-
 df.dropna()
+
+
 def limpar_coluna(coluna):
     coluna = [x.replace('.', '') for x in coluna]
     coluna = [x.replace(',', '.') for x in coluna]
@@ -57,7 +58,6 @@ a = np.where(a == ' ', 0, a)
 a[:, 0] = a[:, 0].astype(int)
 a[:, 1:] = a[:, 1:].astype(float)
 count = 0
-a94 = np.sum(a[9, 7:])/6
 soma_dict = dict()
 for x in a:
     count += 1
