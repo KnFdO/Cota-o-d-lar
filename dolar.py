@@ -81,7 +81,7 @@ for x in a:
             soma_dict[key] = soma / 11
 keys = list(soma_dict.keys())
 values = list(soma_dict.values())
-plt.bar(keys, values, color='red')
+plt.bar(keys, values, color='green')
 plt.xlabel('Ano (1994-2023)')
 plt.ylabel('Valor do Dólar em Real')
 plt.title('Média anual da cotação do Dólar em Real')
